@@ -19,3 +19,9 @@ todoAddButton.addEventListener("click",(e)=>{
     todo = todoInput.value;
     if(todo.length > 0) todoList.push({id : uuid(), todo, isCompleted : false})
 })
+
+function renderTodoList(todoList){
+    showTodos.innerHTML = `<input type="checkbox"> <label class="todo">sky diving</label> <button>delete</button>`
+}
+
+renderTodoList(todoList)
